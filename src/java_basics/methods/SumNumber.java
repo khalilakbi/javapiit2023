@@ -1,4 +1,4 @@
-package java_basics.java_static;
+package java_basics.methods;
 
 public class SumNumber {
     public static void main(String[] args) {
