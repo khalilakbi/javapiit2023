@@ -5,15 +5,15 @@ public class Students {
     String name;
 
     //parameterized constructor.
-    public Students(int studentId, String studentName){
+    public Students(int studentId, String studentName) {
         id = studentId;
         name = studentName;
     }
 
     //method
 
-    public void print(){
-        System.out.println(id+" "+name);
+    public void print() {
+        System.out.println(id + " " + name);
     }
 
 }

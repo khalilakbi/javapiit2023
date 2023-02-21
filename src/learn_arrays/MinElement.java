@@ -11,5 +11,13 @@ public class MinElement {
             }
         }
         System.out.println(min);
+        //find the max using for each loop
+        int max = arr[0];
+        for(int i : arr){
+            if(i > max){
+                max = i;
+            }
+        }
+        System.out.println(max);
     }
 }

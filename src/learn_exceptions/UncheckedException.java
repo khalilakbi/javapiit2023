@@ -17,7 +17,7 @@ public class UncheckedException {
 //        }catch (ArithmeticException ex){
 //            System.out.println("sorry b can't be zero");
 //        }
-        String str = "";
+        String str = null;
         try {
             System.out.println(str.length());
         } catch (NullPointerException ex) {

@@ -8,9 +8,9 @@ public class LearnThrow {
         System.out.println("please enter your age");
         int age = sc.nextInt();
         if (age < 18) {
-            throw new RuntimeException("you not authorize to work");
+            throw new RuntimeException("you are not authorize to work");
         }
 
-        System.out.println("welcome to our companny");
+        System.out.println("welcome to our company");
     }
 }
