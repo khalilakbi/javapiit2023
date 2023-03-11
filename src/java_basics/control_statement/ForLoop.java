@@ -1,5 +1,8 @@
 package java_basics.control_statement;
 
+import java.util.HashMap;
+import java.util.HashSet;
+
 public class ForLoop {
     public static void main(String[] args) {
         /*
@@ -7,6 +10,7 @@ public class ForLoop {
               //block of statements
           }
          */
+        HashMap map = new HashMap<>();
 
         for (int i = 0; i < 5; i++) {
             System.out.print(i + " ");
