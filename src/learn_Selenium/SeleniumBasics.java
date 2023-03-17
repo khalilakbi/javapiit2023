@@ -39,11 +39,9 @@ public class SeleniumBasics {
         WebElement result = chromeDriver.findElement(By.id("addmessage"));
         String actualResult = result.getText();
 
-        try {
+
             Assert.assertEquals(actualResult,expected);
-        }catch (ComparisonFailure ex){
-            System.out.println(ex.getMessage());
-        }
+
 
 
 
