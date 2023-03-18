@@ -3,6 +3,7 @@ package learn_Selenium;
 import org.junit.Assert;
 import org.junit.ComparisonFailure;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -11,10 +12,11 @@ import java.io.File;
 
 public class SeleniumBasics {
     public static void main(String[] args) {
-        String chromePath = System.getProperty("user.dir") + File.separator+"resources"+File.separator+"chromedriver.exe";
-        String firefoxPath = System.getProperty("user.dir") + File.separator+"resources"+File.separator+"geckodriver.exe";
-        System.setProperty("webdriver.chrome.driver",chromePath);
-        System.setProperty("webdriver.gecko.driver",firefoxPath);
+
+        String chromePath = System.getProperty("user.dir") + File.separator + "resources" + File.separator + "chromedriver.exe";
+        String firefoxPath = System.getProperty("user.dir") + File.separator + "resources" + File.separator + "geckodriver.exe";
+        System.setProperty("webdriver.chrome.driver", chromePath);
+        System.setProperty("webdriver.gecko.driver", firefoxPath);
 
         ChromeDriver chromeDriver = new ChromeDriver();
         chromeDriver.get("https://www.lambdatest.com/selenium-playground/simple-form-demo");
@@ -39,11 +41,7 @@ public class SeleniumBasics {
         WebElement result = chromeDriver.findElement(By.id("addmessage"));
         String actualResult = result.getText();
 
-
-            Assert.assertEquals(actualResult,expected);
-
-
-
+        Assert.assertEquals(actualResult, expected);
 
     }
 }
