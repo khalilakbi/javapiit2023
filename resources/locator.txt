@@ -1,0 +1,60 @@
+8 type of locator 
+id 
+cssSelector
+xpath 
+name
+className
+LinkText
+parialLinkText
+tagName
+
+@cssSelector
+
+*                     *                              select all element
+.class                .test                          select all element with class = test
+#id                   #firstName                     select all element with id = firstName
+.class1.class2        .test1.test2                   select all element with class = test1 and class = test2
+tag                   p                              select all <p>element
+tag.class             div.test                       select all <div>element with class = test
+tag#id                input#firstName                select all <input>element with id = firstName 
+tag,tag               div,p                          select all div and all p
+tag tag               div p                          select all p inside div
+tag>tag               dic>p                          select all p where parent is div(p direct child)
+tg[attribute=value]   input[type='submit']           select all input with attribute type = submit
+tag[attribute~=value] input[placeholder~='Please']   select all input with placeholder attribute containing the word Please
+tag[attribute^=value] select[id|='user']             select all select with id attribute start with user
+tag[attribute$=value] div[id$='message']             select all div with id attribute end with message
+tag[attribute*=value] a[id*='message']               select all a with id attribute contains the substring message 
+tag:nth-child(index)  option:nth-child(1)            select option that is the first child of its parent    
+
+
+@xpath 
+//tag                        //input                                    select all element with tag = input
+//tag[@Attribute=’Value’]    //input[@name='phone']                     select all input Attribute name = phone 
+//tag//tag                   //div//input                               select all input inside div
+//tag/tag                    //div/input                                select all input that is direct child
+//tag[index]                 //li[3]                                    select li that is the third of its parent
+
+//tag[contains(@attribute,'val')]  //button[contains(@class='abc')]     select button where class contains abc
+//tag[text()='val']          //a[text()='sign in']                      select a with text is sign in
+//tag[@att='val1' and @att='val2']
+//tag[@att='val1' or @att='val2']
+//tag[starts-with(@attribute,value)]
+//tag[ends-with(@attribute,value)]               only xpath version 2.0(most of browser still support version 1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
