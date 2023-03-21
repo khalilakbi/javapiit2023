@@ -19,7 +19,7 @@ public class ConnectToDB {
         Statement statement;
         ResultSet resultSet;
         Class.forName("com.mysql.cj.jdbc.Driver");
-        conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/classicmodels","root","Lilakh18@");
+        conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/classicmodels","root","");
         statement = conn.createStatement();
         resultSet = statement.executeQuery("SELECT customerName,contactLastName FROM customers limit 10;");
         List<String> allFirstNAme  = new ArrayList<>();
