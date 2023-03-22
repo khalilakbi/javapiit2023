@@ -24,6 +24,5 @@ public class CheckBox {
 //        for(WebElement element : listCheckBox){
 //            element.click();
 //        }
-
     }
 }

@@ -16,10 +16,8 @@ public class RadioButton {
         String firefoxPath = System.getProperty("user.dir") + File.separator + "resources" + File.separator + "geckodriver.exe";
         System.setProperty("webdriver.chrome.driver", chromePath);
         System.setProperty("webdriver.gecko.driver", firefoxPath);
-
         driver = new ChromeDriver();
         driver.get("https://www.lambdatest.com/selenium-playground/radiobutton-demo");
-
         clickOnRadioButton("Male");
 
     }
